@@ -12,13 +12,12 @@ body {
 header {
     background: rgba(0,0,0,0.7);
     height: 80px;
-	position: fixed;
-	top: 0;
 	transition: height 0.5s ease;
     width: 100%;
 	z-index: 9999;
 }
 .logo {
+    left: 5%;
 	position: fixed; 
 	top: 80px;
 	transition: height 0.5s, width 0.5s ease;
@@ -26,6 +25,9 @@ header {
 	z-index: 9998;
 }
 
+.navbar {
+    --bs-navbar-padding-y: 0;
+}
 .navbar-toggler {
     border: none;
     color: #fff;
@@ -53,4 +55,13 @@ header {
 .offcanvas {
     background: #000;    
 }
-
+.offcanvas-header {
+    padding: 0;
+}
+.btn-close {
+    --bs-btn-close-color: #fff;
+    font-size: 3rem;
+}
+.btn-close:focus {
+    box-shadow: none;
+}
