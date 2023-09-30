@@ -59,7 +59,21 @@ header.shrink .navbar-nav {
     color: #fff;
 }
 .navbar-nav .nav-link:hover,
-.navbar-nav .nav-link.active {
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #cd0c0c;
+}
+header.shrink .dropdown-menu[data-bs-popper] {
+    margin-top: -10px;
+}
+.navbar-nav .dropdown-menu {
+    background: rgba(0,0,0,0.7);
+}
+.navbar-nav .dropdown-menu a {
+    color: #fff;
+}
+.navbar-nav .dropdown-menu a:hover {
+    background: none;
     color: #cd0c0c;
 }
 .offcanvas {
