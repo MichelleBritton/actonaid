@@ -16,13 +16,20 @@ header {
     width: 100%;
 	z-index: 9999;
 }
-.logo {
+header.shrink {
+    height: 30px;
+}
+#logo {
     left: 5%;
 	position: fixed; 
 	top: 80px;
-	transition: height 0.5s, width 0.5s ease;
+	transition: top 0.5s, height 0.5s, width 0.5s ease;
 	width: 10%;
 	z-index: 9998;
+}
+#logo.shrink {
+    top: 30px;
+    width: 6%;
 }
 
 .navbar {
@@ -41,6 +48,9 @@ header {
 }
 .navbar-nav {
     font: 300 2rem 'Zilla Slab', serif;
+}
+header.shrink .navbar-nav {
+    font-size: 1.2rem;
 }
 .navbar-nav .nav-item {
     margin-left: 3rem;
@@ -65,3 +75,4 @@ header {
 .btn-close:focus {
     box-shadow: none;
 }
+
