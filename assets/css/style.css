@@ -64,7 +64,6 @@ a.btn-outline:hover:before {
         font-size: 3rem;
     }
 }
-
 .center-xy {
     left: 50%;
     position: absolute;
@@ -75,7 +74,6 @@ a.btn-outline:hover:before {
 	-o-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
-
 .stripy-bg {
     background: repeating-linear-gradient(
 		-45deg,
@@ -103,7 +101,6 @@ header.shrink {
 ------------------------------------------------------------------*/
 #logo {
     left: 5%;
-	position: fixed; 
 	top: 80px;
 	transition: top 0.5s, height 0.5s, width 0.5s ease;
 	width: 25%;
@@ -160,12 +157,14 @@ header.shrink .navbar-nav {
 .navbar-nav .nav-item {
     margin-left: 3rem;
 }
-.navbar-nav .nav-link {
+.navbar-nav .nav-link,
+.navbar-nav .dropdown-menu a {
     color: #fff;
 }
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active,
-.navbar-nav .nav-link.show {
+.navbar-nav .nav-link.show,
+.navbar-nav .dropdown-menu a:hover {
     color: #cd0c0c;
 }
 header.shrink .dropdown-menu[data-bs-popper] {
@@ -174,12 +173,8 @@ header.shrink .dropdown-menu[data-bs-popper] {
 .navbar-nav .dropdown-menu {
     background: rgba(0,0,0,0.7);
 }
-.navbar-nav .dropdown-menu a {
-    color: #fff;
-}
 .navbar-nav .dropdown-menu a:hover {
     background: none;
-    color: #cd0c0c;
 }
 .offcanvas {
     background: #000;    
