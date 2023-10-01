@@ -70,12 +70,28 @@ header.shrink {
 	position: fixed; 
 	top: 80px;
 	transition: top 0.5s, height 0.5s, width 0.5s ease;
-	width: 10%;
+	width: 25%;
 	z-index: 9998;
 }
 #logo.shrink {
     top: 30px;
-    width: 6%;
+    width: 12%;
+}
+@media only screen and (min-width:992px) {	
+    #logo {
+        width: 15%;
+    }
+    #logo.shrink {
+        width: 8%;
+    }
+}
+@media only screen and (min-width:1400px) {	
+    #logo {
+        width: 10%;
+    }
+    #logo.shrink {
+        width: 6%;
+    }
 }
 
 /* Navigation
