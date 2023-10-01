@@ -38,6 +38,16 @@ a.btn-outline {
 	transition: .3s ease;    
     z-index: 9999;
 }
+@media only screen and (min-width:1200px) {	
+    a.btn-outline {
+        font-size: 2rem;
+    }
+}
+@media only screen and (min-width:1400px) {	
+    a.btn-outline {
+        font-size: 3rem;
+    }
+}
 a.btn-outline:before {
     background: rgba(255, 255, 255, 0.2);
     bottom: -1px;
@@ -53,16 +63,6 @@ a.btn-outline:before {
 }	
 a.btn-outline:hover:before {
     right: -1px
-}
-@media only screen and (min-width:1200px) {	
-    a.btn-outline {
-        font-size: 2rem;
-    }
-}
-@media only screen and (min-width:1400px) {	
-    a.btn-outline {
-        font-size: 3rem;
-    }
 }
 .center-xy {
     left: 50%;
