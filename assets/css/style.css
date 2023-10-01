@@ -207,9 +207,21 @@ header.shrink .dropdown-menu[data-bs-popper] {
     }
 }
 
-/*
+/* Introduction Section
 ------------------------------------------------------------------*/
-
+.intro p {
+    line-height: 1.5;
+}
+@media only screen and (min-width:1200px) {	
+    .intro p {
+        font-size: 2rem;
+    }
+}
+@media only screen and (min-width:1800px) {	
+    .intro p {
+        font-size: 3rem;
+    }
+}
 
 /*
 ------------------------------------------------------------------*/
