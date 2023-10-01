@@ -9,13 +9,28 @@ body {
 	color: #000;
 }
 
+/* Typography 
+------------------------------------------------------------------*/
+h1, h2, h3 {
+    font-family: 'Bitter', serif;
+    font-weight: 900;
+}
+h4, h5, h6,
+a.btn-outline,
+.navbar-nav  {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 400;
+}
+.white {
+    color: #fff;
+}
+
 /* Common Elements 
 ------------------------------------------------------------------*/
 a.btn-outline {
     border: solid 2px #fff;
-    color: #fff;
 	display: inline-block;
-	font: 400 1.5rem 'Zilla Slab', serif;
+	font-size: 1.5rem;
     padding: 10px 30px;  
 	position: relative;
     text-align: center;
@@ -48,6 +63,27 @@ a.btn-outline:hover:before {
     a.btn-outline {
         font-size: 3rem;
     }
+}
+
+.center-xy {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.stripy-bg {
+    background: repeating-linear-gradient(
+		-45deg,
+		rgba(255,255,255, 0),
+		rgba(255,255,255, 0) 1px,
+		rgba(0,0,0, 0.9) 3px,
+		rgba(0,0,0, 0.9) 3px
+	);	
 }
 
 /* Header 
@@ -101,7 +137,6 @@ header.shrink {
 }
 .navbar-toggler {
     border: none;
-    color: #fff;
     padding: 0;
 }
 .navbar-toggler:focus {
@@ -111,7 +146,8 @@ header.shrink {
     background-image: none;    
 }
 .navbar-nav {
-    font: 300 1.5rem 'Zilla Slab', serif;
+    font-size: 1.5rem;
+    font-weight: 300;
 }
 @media only screen and (min-width:1200px) {	
     .navbar-nav {
@@ -162,27 +198,13 @@ header.shrink .dropdown-menu[data-bs-popper] {
 /* Carousel
 ------------------------------------------------------------------*/
 #hero-carousel .carousel-caption {
-    background: repeating-linear-gradient(
-		-45deg,
-		rgba(255,255,255, 0),
-		rgba(255,255,255, 0) 1px,
-		rgba(0,0,0, 0.9) 3px,
-		rgba(0,0,0, 0.9) 3px
-	);	
     bottom: auto;
-    left: 50%;
     padding: 10px;
     right: 0;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	-o-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
     width: 90%;
 }
 #hero-carousel .carousel-caption h2 {
-    font: 900 2rem 'Bitter', serif;
+    font-size: 2rem;
 	margin: 0 0 10px;
 }
 #hero-carousel .carousel-indicators [data-bs-target] {
@@ -223,9 +245,34 @@ header.shrink .dropdown-menu[data-bs-popper] {
     }
 }
 
-/*
+/* Upcoming Events Section
 ------------------------------------------------------------------*/
-
+#upcoming-events img {
+    height: 100%;
+    object-fit: cover;
+    width: 50%;
+}
+#upcoming-events .text {
+    padding: 10px;
+    width: 90%;
+}
+#upcoming-events h2 {
+    font-size: 2rem;
+	margin: 0 0 10px;
+}
+@media only screen and (min-width:1200px) {	
+    #upcoming-events .text {
+        padding: 30px;
+    }
+    #upcoming-events h2 {
+        font-size: 3rem;
+    }
+}
+@media only screen and (min-width:1400px) {	
+    #upcoming-events h2 {
+        font-size: 5rem;
+    }
+}
 
 /*
 ------------------------------------------------------------------*/
