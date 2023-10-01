@@ -54,7 +54,12 @@ header.shrink {
     background-image: none;    
 }
 .navbar-nav {
-    font: 300 2rem 'Zilla Slab', serif;
+    font: 300 1.5rem 'Zilla Slab', serif;
+}
+@media only screen and (min-width:1200px) {	
+    .navbar-nav {
+        font-size: 2rem;
+    }
 }
 header.shrink .navbar-nav {
     font-size: 1.2rem;
