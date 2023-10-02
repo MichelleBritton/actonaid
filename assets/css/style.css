@@ -11,16 +11,53 @@ body {
 
 /* Typography 
 ------------------------------------------------------------------*/
-h1, h2, h3 {
-    font-family: 'Bitter', serif;
-    font-weight: 900;
+h1, h2 {
+    font: 900 2rem 'Bitter', serif;
 }
-h4, h5, h6,
+@media only screen and (min-width:1200px) {	  
+    h1, h2 {
+        font-size: 3rem;
+    }
+}
+@media only screen and (min-width:1400px) {	
+    h1, h2 {
+        font-size: 5rem;
+    }
+}
+
+h3, 
+a.btn-outline,
+.navbar-nav  {
+    font: 400 1.5rem 'Zilla Slab', serif;
+}
+@media only screen and (min-width:1200px) {	
+    h3,
+    p,
+    .intro p,
+    a.btn-outline,
+    .navbar-nav {
+        font-size: 2rem;
+    }
+}
+@media only screen and (min-width:1400px) {	
+    h3,
+    a.btn-outline {
+        font-size: 3rem;
+    }
+}
+@media only screen and (min-width:1800px) {	
+    .intro p {
+        font-size: 3rem;
+    }
+}
+
+h3, h4, h5, h6,
 a.btn-outline,
 .navbar-nav  {
     font-family: 'Zilla Slab', serif;
     font-weight: 400;
 }
+
 .white {
     color: #fff;
 }
@@ -30,23 +67,12 @@ a.btn-outline,
 a.btn-outline {
     border: solid 2px #fff;
 	display: inline-block;
-	font-size: 1.5rem;
     padding: 10px 30px;  
 	position: relative;
     text-align: center;
     text-decoration: none;
 	transition: .3s ease;    
     z-index: 9999;
-}
-@media only screen and (min-width:1200px) {	
-    a.btn-outline {
-        font-size: 2rem;
-    }
-}
-@media only screen and (min-width:1400px) {	
-    a.btn-outline {
-        font-size: 3rem;
-    }
 }
 a.btn-outline:before {
     background: rgba(255, 255, 255, 0.3);
@@ -143,13 +169,7 @@ header.shrink {
     background-image: none;    
 }
 .navbar-nav {
-    font-size: 1.5rem;
     font-weight: 300;
-}
-@media only screen and (min-width:1200px) {	
-    .navbar-nav {
-        font-size: 2rem;
-    }
 }
 header.shrink .navbar-nav {
     font-size: 1.2rem;
@@ -207,7 +227,6 @@ header.shrink .dropdown-menu[data-bs-popper] {
     width: 90%;
 }
 #hero-carousel .carousel-caption h2 {
-    font-size: 2rem;
 	margin: 0 0 10px;
 }
 #hero-carousel .carousel-indicators [data-bs-target] {
@@ -222,30 +241,12 @@ header.shrink .dropdown-menu[data-bs-popper] {
         padding: 30px;
         width: 70%;
     }
-    #hero-carousel .carousel-caption h2 {
-        font-size: 3rem;
-    }
-}
-@media only screen and (min-width:1400px) {	
-    #hero-carousel .carousel-caption h2 {
-        font-size: 5rem;
-    }
 }
 
 /* Introduction Section
 ------------------------------------------------------------------*/
 .intro p {
     line-height: 1.5;
-}
-@media only screen and (min-width:1200px) {	
-    .intro p {
-        font-size: 2rem;
-    }
-}
-@media only screen and (min-width:1800px) {	
-    .intro p {
-        font-size: 3rem;
-    }
 }
 
 /* Upcoming Events Section
@@ -260,26 +261,20 @@ header.shrink .dropdown-menu[data-bs-popper] {
     width: 90%;
 }
 #upcoming-events h2 {
-    font-size: 2rem;
 	margin: 0 0 10px;
 }
 @media only screen and (min-width:1200px) {	
     #upcoming-events .text {
         padding: 30px;
     }
-    #upcoming-events h2 {
-        font-size: 3rem;
-    }
-}
-@media only screen and (min-width:1400px) {	
-    #upcoming-events h2 {
-        font-size: 5rem;
-    }
 }
 
-/*
+/* Newsletter
 ------------------------------------------------------------------*/
-
+#newsletter {
+    background: url('../images/news-bg.png') no-repeat;
+    background-size: cover;
+}
 
 /*
 ------------------------------------------------------------------*/
