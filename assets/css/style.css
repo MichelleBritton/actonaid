@@ -49,7 +49,7 @@ a.btn-outline {
     }
 }
 a.btn-outline:before {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.3);
     bottom: -1px;
     content: "";
     display: block;
@@ -192,6 +192,14 @@ header.shrink .dropdown-menu[data-bs-popper] {
 
 /* Carousel
 ------------------------------------------------------------------*/
+#hero-carousel .carousel,
+#hero-carousel .carousel-item {
+    height: 75vh;
+}
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
 #hero-carousel .carousel-caption {
     bottom: auto;
     padding: 10px;
