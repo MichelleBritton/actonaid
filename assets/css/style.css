@@ -62,6 +62,15 @@ a.btn-outline,
 .white {
     color: #fff;
 }
+a.white:hover {
+    color: #000;
+}
+.black {
+    color: #000;
+}
+a.black:hover {
+    color: #cd0c0c;
+}
 .red-bg {
     background-color: #cd0c0c;
 }
