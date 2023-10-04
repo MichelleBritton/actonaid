@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/d8bc5721cb.js" crossorigin="anonymous"></script>
+    <title>Acton Aid | Community</title>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="fixed-top d-flex justify-content-end">  
+        <!-- Logo -->   
+        <div id="logo" class="position-fixed">            
+            <a href="index.html" aria-label="Go to the homepage"><img src="assets/images/logo.png" class="d-block w-100" alt="Acton Aid Logo"></a>           
+        </div>  
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header justify-content-end">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="events.html">Events</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link   dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Community
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item active" aria-current="page" aria-label="" href="community.html">Community</a></li>
+                                    <li><a class="dropdown-item" aria-label="" href="can-acton-aid-help-you.html">Can Acton Aid help you?</a></li>
+                                    <li><a class="dropdown-item" aria-label="" href="community-matters.html">Community Matters</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="my-account.html">My account</a>
+                            </li>
+                        </ul>            
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero Image -->
+    <section id="hero-img" class="container-fluid g-0">
+        <img src="assets/images/.jpg" class="d-block w-100" alt="">
+        <h1 class="center-xy stripy-bg white text-center py-3 px-5">Community</h1>
+    </section>
+    <!-- Text Section -->
+    <section class="container-fluid text-center">
+        <div class="row">
+            <div class="col-sm-10 col-lg-8 mx-auto py-5">
+                <p></p>
+            </div>
+        </div>
+    </section>     
+    <!-- Sign up to Newsletter Section -->
+    <section id="newsletter">
+        <div class="row g-0 py-5">
+            <h2 class="text-center white">Sign up to our Newsletter</h2>
+        </div>
+        <div class="row justify-content-center align-items-center pb-5">
+            <div class="col-10 offset-lg-1 col-lg-6 col-xl-7">
+                <p class="text-center text-lg-start float-lg-end white">We'll send you the Acton Aid quarterly newsletter containing news, upcoming events and more.</p>
+            </div>
+            <div class="col-10 col-lg-5 col-xl-4">
+                <form id="sib-form" class="text-center text-lg-start float-lg-start w-100" method="POST" action="https://10564178.sibforms.com/serve/MUIEAC193nrgX__HuFT99NzFR-k8vN6UNAGiJdEV6YrLzTIzzctcLhkgD5kRB6fyZ5N0TZbYtSaX4Ij4spzvmwZYXcHZHvklGs_PjI24t3-mPZic2NzZYEffzzptx4lPGUmDcPGcbeE2YyOT3zoHOAdlcIv354F2J4Mrb8tfYrGNXB8Qr1dB68c6F79p5Pv8gnOjKaZUQ9Bo-Zsp">
+					<div class="row align-items-center">
+                        <div class="col-6">
+                            <input class="w-100 p-2" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Email address" data-required="true" required />
+                        </div>
+                        <div class="col-6">
+                            <button class="btn red-bg white py-2 px-5" form="sib-form" type="submit">Sign Up</button>
+                        </div>                    
+                    </div>
+                    <div class="row">
+                        <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;"></label>
+					    <input type="hidden" name="locale" value="en">
+					    <input type="hidden" name="html_type" value="simple">
+                    </div>
+				</form>
+            </div>
+        </div>
+    </section>
+    <!-- Link Boxes -->
+    <section id="info-links">
+        <div class="row text-center g-0">
+            <div class="col-12 col-md-4 box-link black-bg position-relative">
+                <img src="assets/images/events-bg.jpg" class="d-block w-100" alt="Music Event">
+                <h3 class="center-xy"><a href="events.html" class="white text-uppercase text-decoration-none">Events</a></h3>
+            </div>
+            <div class="col-12 col-md-4 box-link red-bg position-relative">
+                <img src="assets/images/airambulance.jpg" class="d-block w-100" alt="Air Ambulance">
+                <h3 class="center-xy"><a href="about.html" class="black text-uppercase text-decoration-none">About Acton Aid</a></h3>
+            </div>
+            <div class="col-12 col-md-4 box-link white-bg position-relative">
+                <img src="assets/images/village.jpg" class="d-block w-100" alt="Iron Acton Village">
+                <h3 class="center-xy"><a href="can-acton-aid-help-you.html" class="red text-uppercase text-decoration-none">Can Acton Aid help you?</a></h3>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="container-fluid black-bg">
+        <div class="row">
+            <div class="col white p-3">
+                &copy; Acton Aid, all rights reserved. Acton Aid C.I.C Registration No. 11470309
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
