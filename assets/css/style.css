@@ -71,6 +71,9 @@ a.white:hover {
 a.black:hover {
     color: #cd0c0c;
 }
+.red {
+    color: #cd0c0c;
+}
 .red-bg {
     background-color: #cd0c0c;
 }
@@ -327,3 +330,23 @@ header.shrink .dropdown-menu[data-bs-popper] {
     color: #fff;
 }
 
+/* Newsletter
+------------------------------------------------------------------*/
+#info-links img {
+    height: 300px;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+#info-links .box-link:hover > img {
+    opacity: .5;
+}
+#info-links a.white:hover {
+    color: #fff;
+}
+#info-links a.black:hover {
+    color: #000;
+}
+#info-links a.red:hover {
+    color: #cd0c0c;
+}
