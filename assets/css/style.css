@@ -293,5 +293,8 @@ header.shrink .dropdown-menu[data-bs-popper] {
     color: #fff;
 }
 
-/*
+/* Footer 
 ------------------------------------------------------------------*/
+footer {
+    background: #000;
+}
