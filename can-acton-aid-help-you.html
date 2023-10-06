@@ -71,7 +71,8 @@
     <section class="container-fluid text-center">
         <div class="row">
             <div class="col-sm-10 col-lg-8 mx-auto py-5">
-                <p></p>
+                <p>Acton Aid raises funds to help people and organisations in the Parish who need assistance. If you feel you are a deserving cause, please fill in the form below. It will be sent directly to the chairman and secretary and will be treated in the strictest of confidence if you make such a request.</p>
+                <p>We can also organise working parties to help you or your organisation. Previous work has included litter picking, decorating and clearing overgrown areas.</p>
             </div>
         </div>
     </section>  
@@ -80,7 +81,30 @@
         <div class="row bar w-100 black-bg"></div>
         <div class="row box position-relative white-bg my-5 p-5">
             <div class="col text-center">
-                <p></p>
+                <p>Please complete the form below to request our help.</p>
+                <form method="get" action="form-submission.html">
+                    <fieldset>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required><br>
+
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" rows="5" cols="40"></textarea><br>
+        
+                        <label for="tel">Telephone:</label>
+                        <input type="text" id="tel" name="tel" required><br>
+        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br>
+
+                        <label for="reason">Nature of Enquiry:</label>
+                        <input type="reason" id="reason" name="reason" required><br>
+                   
+                        <label for="help">How can we help?:</label>
+                        <textarea id="help" name="help" rows="5" cols="40"></textarea>
+
+                        <input type="submit" value="Submit">
+                    </fieldset>
+                </form>
             </div>
         </div>
     </section>
