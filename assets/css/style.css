@@ -28,6 +28,7 @@ h1, h2 {
 h3, 
 a.btn-outline,
 .navbar-nav,
+.dropdown-menu,
 #newsletter .btn {
     font: 400 1.5rem 'Zilla Slab', serif;
 }
@@ -150,6 +151,7 @@ header {
 }
 header.shrink {
     height: 30px;
+    padding-top: 10px;
 }
 
 /* Logo
@@ -214,12 +216,13 @@ header.shrink .navbar-nav {
     color: #cd0c0c;
 }
 header.shrink .dropdown-menu[data-bs-popper] {
-    margin-top: -10px;
+    margin-top: -20px;
 }
 .navbar-nav .dropdown-menu {
     background: rgba(0,0,0,0.7);
 }
-.navbar-nav .dropdown-menu a:hover {
+.navbar-nav .dropdown-menu a:hover,
+.dropdown-item.active {
     background: none;
 }
 .offcanvas {
@@ -278,9 +281,9 @@ header.shrink .dropdown-menu[data-bs-popper] {
     line-height: 1.5;
 }
 
-/* Chairman's Message
+/* Large Text Box with shadow
 ------------------------------------------------------------------*/
-#chairman .bar {
+#box-shadow .bar {
     border-top: 2px solid #cd0c0c;
     border-bottom: 2px solid #cd0c0c;
     height: 300px;
@@ -293,7 +296,7 @@ header.shrink .dropdown-menu[data-bs-popper] {
     transform: translateY(-20%);
     z-index: 0;
 }
-#chairman .box {
+#box-shadow .box {
     -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
@@ -301,7 +304,7 @@ header.shrink .dropdown-menu[data-bs-popper] {
     z-index: 1;
 }
 @media only screen and (min-width:992px) {
-    #chairman .box {
+    #box-shadow .box {
         width: 60%;
     }
 }
