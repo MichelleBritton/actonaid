@@ -11,3 +11,26 @@ window.addEventListener('scroll', function () {
         document.getElementById("logo").classList.remove("shrink");
     }
 });
+
+
+/**
+ *  Send email using Email.js service
+ */
+function sendMail(contactForm) {
+    emailjs.send("actonaid", "aacontactForm", {
+        "from_name": contactForm.name.value,
+        "from_address": contactForm.address.value,
+        "from_tel": contactForm.tel.value,
+        "from_email": contactForm.email.value,
+        "reason": contactForm.reason.value,
+        "message": contactForm.message.value
+    })
+    .then(
+        function(response) {
+            console.log("SUCCESS", response);
+        },
+        function(error) {
+            console.log("FAILED", error);
+        });
+    return false;
+}

@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <script src="https://kit.fontawesome.com/d8bc5721cb.js" crossorigin="anonymous"></script>
     <title>Acton Aid | Can Acton Aid Help You?</title>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("Yj50ldrxZl_LCrXJ_");            
+        })();
+    </script>
 </head>
 <body>
     <!-- Header -->
@@ -82,7 +89,8 @@
         <div class="row box position-relative white-bg my-5 p-5">
             <div class="col">
                 <p class="text-center">Please complete the form below to request our help.</p>
-                <form method="get" action="form-submission.html" class="contact-form">
+                
+                <form class="contact-form" onsubmit="return sendMail(this);">
                     <fieldset>
                         <div class="form-group row">
                             <label for="name" class="col-sm-2 col-form-label">Name:</label>
@@ -115,7 +123,7 @@
                         <div class="form-group row">
                             <label for="reason" class="col-sm-2 col-form-label">Nature of Enquiry:</label>
                             <div class="col-sm-10">
-                                <select class="form-control" id="reason">
+                                <select class="form-control" id="reason" name="reason">
                                     <option>Funding</option>
                                     <option>Help with physical work</option>
                                     <option>Other</option>
@@ -124,9 +132,9 @@
                         </div>
                         
                         <div class="form-group row">
-                            <label for="help" class="col-sm-2 col-form-label">How can we help?:</label>
+                            <label for="message" class="col-sm-2 col-form-label">How can we help?:</label>
                             <div class="col-sm-10">
-                                <textarea id="help" class="form-control form-control-sm" name="help" rows="5" cols="40"></textarea>
+                                <textarea id="message" class="form-control form-control-sm" name="message" rows="5" cols="40"></textarea>
                             </div>
                         </div>
                         
