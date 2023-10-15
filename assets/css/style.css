@@ -29,7 +29,8 @@ h3,
 a.btn-outline,
 .navbar-nav,
 .dropdown-menu,
-#newsletter .btn {
+#newsletter .btn,
+.contact-form .btn {
     font: 400 1.5rem 'Zilla Slab', serif;
 }
 @media only screen and (min-width:1200px) {	
@@ -340,7 +341,7 @@ header.shrink .dropdown-menu[data-bs-popper] {
     color: #fff;
 }
 
-/* Newsletter
+/* Info Links
 ------------------------------------------------------------------*/
 #info-links img {
     height: 300px;
@@ -359,4 +360,14 @@ header.shrink .dropdown-menu[data-bs-popper] {
 }
 #info-links a.red:hover {
     color: #cd0c0c;
+}
+
+/* Contact Form
+------------------------------------------------------------------*/
+.contact-form input[type="submit"] {
+    float: right;
+}
+.contact-form .btn:hover {
+    background: #000;
+    color: #fff;
 }

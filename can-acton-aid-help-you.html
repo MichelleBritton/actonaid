@@ -64,8 +64,8 @@
     </header>
     <!-- Hero Image -->
     <section id="hero-img" class="container-fluid g-0">
-        <img src="assets/images/.jpg" class="d-block w-100" alt="">
-        <h1 class="center-xy stripy-bg white text-center py-3 px-5"></h1>
+        <img src="assets/images/path.jpg" class="d-block w-100" alt="Path along river">
+        <h1 class="center-xy stripy-bg white text-center py-3 px-5">Can Acton Aid help you?</h1>
     </section>
     <!-- Text Section -->
     <section class="container-fluid text-center">
@@ -76,33 +76,61 @@
             </div>
         </div>
     </section>  
-    <!-- Chairman's Message --> 
+    <!-- Contact Form --> 
     <section id="box-shadow" class="d-flex justify-content-center position-relative my-5">
         <div class="row bar w-100 black-bg"></div>
         <div class="row box position-relative white-bg my-5 p-5">
-            <div class="col text-center">
-                <p>Please complete the form below to request our help.</p>
-                <form method="get" action="form-submission.html">
+            <div class="col">
+                <p class="text-center">Please complete the form below to request our help.</p>
+                <form method="get" action="form-submission.html" class="contact-form">
                     <fieldset>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required><br>
-
-                        <label for="address">Address</label>
-                        <textarea id="address" name="address" rows="5" cols="40"></textarea><br>
+                        <div class="form-group row">
+                            <label for="name" class="col-sm-2 col-form-label">Name:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control form-control-sm" id="name" name="name" required>
+                            </div>
+                        </div>
+                       
+                        <div class="form-group row">
+                            <label for="address" class="col-sm-2 col-form-label">Address</label>
+                            <div class="col-sm-10">
+                                <textarea id="address" class="form-control form-control-sm" name="address" rows="5" cols="40"></textarea>
+                            </div>                            
+                        </div>
         
-                        <label for="tel">Telephone:</label>
-                        <input type="text" id="tel" name="tel" required><br>
-        
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required><br>
-
-                        <label for="reason">Nature of Enquiry:</label>
-                        <input type="reason" id="reason" name="reason" required><br>
-                   
-                        <label for="help">How can we help?:</label>
-                        <textarea id="help" name="help" rows="5" cols="40"></textarea>
-
-                        <input type="submit" value="Submit">
+                        <div class="form-group row">
+                            <label for="tel" class="col-sm-2 col-form-label">Telephone:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control form-control-sm" id="tel" name="tel" required>
+                            </div>                            
+                        </div>
+                        
+                        <div class="form-group row">
+                            <label for="email" class="col-sm-2 col-form-label">Email:</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control form-control-sm" id="email" name="email" required>
+                            </div>                            
+                        </div>
+                        
+                        <div class="form-group row">
+                            <label for="reason" class="col-sm-2 col-form-label">Nature of Enquiry:</label>
+                            <div class="col-sm-10">
+                                <select class="form-control" id="reason">
+                                    <option>Funding</option>
+                                    <option>Help with physical work</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row">
+                            <label for="help" class="col-sm-2 col-form-label">How can we help?:</label>
+                            <div class="col-sm-10">
+                                <textarea id="help" class="form-control form-control-sm" name="help" rows="5" cols="40"></textarea>
+                            </div>
+                        </div>
+                        
+                        <input type="submit" class="btn red-bg white my-3 py-2 px-5" value="Submit">                                 
                     </fieldset>
                 </form>
             </div>
