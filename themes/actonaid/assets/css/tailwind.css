@@ -1,4 +1,6 @@
-*, ::before, ::after {
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@700;900&family=Zilla+Slab:wght@300;400;700&display=swap");
+
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -52,7 +54,7 @@
   --tw-contain-style:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -552,4 +554,102 @@ video {
 
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
+}
+
+html {
+  font-family: "Zilla Slab", serif;
+}
+
+h1 {
+  font-family: "Bitter", serif;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 900;
+}
+
+@media (min-width: 768px){
+  h1{
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1280px){
+  h1{
+    font-size: 8rem;
+    line-height: 1;
+  }
+}
+
+h2 {
+  font-family: "Bitter", serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+@media (min-width: 768px){
+  h2{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 1280px){
+  h2{
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+h3 {
+  font-family: "Bitter", serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+@media (min-width: 768px){
+  h3{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width: 1280px){
+  h3{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+h4{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+
+h5{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+h6{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+p{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  line-height: 1.375;
+}
+
+@media (min-width: 768px){
+  p{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
