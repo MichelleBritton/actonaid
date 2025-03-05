@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "settings": {
+    "color": {
+      "custom": false,
+      "palette": [{ "slug": "primary", "color": "#ff0000", "name": "Primary" }]
+    },
+    "layout": {
+      "wideSize": "1200px"
+    }
+  }
+}
