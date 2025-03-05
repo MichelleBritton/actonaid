@@ -3,18 +3,34 @@
   "version": 2,
   "settings": {
     "color": {
-      "defaultPalette": false,
       "custom": false,
+      "defaultPalette": false,
+      "defaultDuotone": false,
+      "defaultGradients": false,
       "palette": [
-        { "slug": "black", "color": "#000", "name": "black" },
-        { "slug": "white", "color": "#fff", "name": "white" },
-        { "slug": "red", "color": "#cd0c0c", "name": "red" },
-        { "slug": "purpleG", "color": "#7B6D8D", "name": "purpleG" },
-        { "slug": "greenG", "color": "#619B8A", "name": "greenG" }
+        { "slug": "aa-black", "color": "#000", "name": "black" },
+        { "slug": "aa-white", "color": "#fff", "name": "white" },
+        { "slug": "aa-red", "color": "#cd0c0c", "name": "red" },
+        { "slug": "aa-purple-g", "color": "#7B6D8D", "name": "purple" },
+        { "slug": "aa-green-g", "color": "#619B8A", "name": "green" },
+        { "slug": "aa-grey", "color": "#D1D5DB", "name": "grey" }
+      ],
+      "gradients": [
+        {
+          "slug": "aa-gradient",
+          "name": "AA Purple to Green Gradient",
+          "gradient": "linear-gradient(-45deg, #7B6D8D, #619B8A)"
+        }
       ]
     },
     "layout": {
       "wideSize": "1200px"
+    }
+  },
+  "styles": {
+    "color": {
+      "text": "var(--wp--preset--color--aa-black)",
+      "background": "var(--wp--preset--color--white)"
     }
   }
 }
