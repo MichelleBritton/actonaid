@@ -3,7 +3,9 @@
 function aa_enqueue() {
     wp_register_style(
         'aa_theme',
-        get_theme_file_uri('/assets/css/tailwind.css')
+        get_theme_file_uri('/assets/css/tailwind.css'),
+        [],
+        null
     );
     wp_register_style(
         'bitter',
