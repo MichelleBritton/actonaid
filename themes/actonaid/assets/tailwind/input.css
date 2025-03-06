@@ -1,34 +1,42 @@
-@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@700;900&family=Zilla+Slab:wght@300;400;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  html {
-    font-family: "Zilla Slab", serif;
+  html,
+  body,
+  .editor-styles-wrapper {
+    font-family: 'Zilla Slab', serif;
   }
-  h1 {
-    font-family: "Bitter", serif;
+  h1,
+  .editor-styles-wrapper h1 {
+    font-family: 'Bitter', serif;
     @apply text-5xl font-black md:text-7xl xl:text-9xl;
   }
-  h2 {
-    font-family: "Bitter", serif;
+  h2,
+  .editor-styles-wrapper h2 {
+    font-family: 'Bitter', serif;
     @apply text-xl font-bold md:text-3xl xl:text-5xl;
   }
-  h3 {
-    font-family: "Bitter", serif;
+  h3,
+  .editor-styles-wrapper h3 {
+    font-family: 'Bitter', serif;
     @apply text-lg font-bold md:text-2xl xl:text-3xl;
   }
-  h4 {
+  h4,
+  .editor-styles-wrapper h4 {
     @apply text-4xl font-bold;
   }
-  h5 {
+  h5,
+  .editor-styles-wrapper h5 {
     @apply text-3xl font-bold;
   }
-  h6 {
+  h6,
+  .editor-styles-wrapper h6 {
     @apply text-xl font-bold;
   }
-  p {
+  p,
+  .editor-styles-wrapper p {
     @apply text-lg leading-snug md:text-3xl;
   }
 }

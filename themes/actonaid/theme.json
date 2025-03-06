@@ -23,6 +23,20 @@
         }
       ]
     },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "Bitter, serif",
+          "slug": "bitter",
+          "name": "Bitter"
+        },
+        {
+          "fontFamily": "Zilla Slab, serif",
+          "slug": "zilla",
+          "name": "Zilla Slab"
+        }
+      ]
+    },
     "layout": {
       "wideSize": "1200px"
     }
