@@ -8,3 +8,8 @@ function aa_setup_theme() {
     ]);
 }
 
+function aa_theme_register_menus() {
+    register_nav_menus(array(
+      'primary' => 'Primary Menu',
+    ));
+}

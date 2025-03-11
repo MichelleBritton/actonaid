@@ -45,6 +45,7 @@ module.exports = {
     'from-purpleG',
     'gap-8',
     'group',
+    'group-open',
     'group-open:block',
     'group-open:max-h-80',
     'group-open:-rotate-45',
