@@ -26,7 +26,7 @@ function aa_enqueue() {
 }
 
 function aa_enqueue_editor_styles() {
-    wp_enqueue_style('aa_theme', get_theme_file_uri('/assets/css/tailwind.css'), [], null);    
-    wp_enqueue_style('bitter');
-    wp_enqueue_style('zilla');
+    add_editor_style('/assets/css/tailwind.css');
+    add_editor_style('https://fonts.googleapis.com/css2?family=Bitter:wght@700;900&display=swap');
+    add_editor_style('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;700&display=swap');
 }

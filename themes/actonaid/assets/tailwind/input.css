@@ -42,10 +42,10 @@
 }
 
 @layer components {
-  .menu-item {
+  .desktop-menu-item {
     @apply relative flex h-full cursor-pointer items-center text-gray-300 transition-colors duration-700 ease-in-out hover:bg-white/20 hover:text-white md:p-4 md:text-2xl lg:p-6 lg:text-3xl;
   }
-  .group-open > .menu-item {
+  .group-open > .desktop-menu-item {
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
   }

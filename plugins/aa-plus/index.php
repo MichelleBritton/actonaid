@@ -16,14 +16,18 @@
    exit;
 }
 
-// // Setup
-// define('AA_PLUGIN_DIR', plugin_dir_path(__FILE__));
+// Setup
+define('AA_PLUGIN_DIR', plugin_dir_path(__FILE__));
 
-// // Includes
-// include(IA_PLUGIN_DIR . 'includes/register-blocks.php');
+// Includes
+include(AA_PLUGIN_DIR . 'includes/register-blocks.php');
+include(AA_PLUGIN_DIR . 'includes/blocks/aa-navigation.php');
+include(AA_PLUGIN_DIR . 'includes/frontend/enqueue.php');
 // include(IA_PLUGIN_DIR . 'includes/activate.php');
 
-// // Hooks
+// Hooks
+add_action('init', 'aa_register_blocks');
+add_action('wp_enqueue_scripts', 'aa_enqueue_navigation_script'); 
+add_action('enqueue_block_editor_assets', 'aa_enqueue_editor_scripts'); 
 // register_activation_hook(__FILE__, 'aa_activate_plugin');
-// add_action('init', 'aa_register_blocks');
 

@@ -668,7 +668,7 @@ p,
   }
 }
 
-.menu-item {
+.desktop-menu-item {
   position: relative;
   display: flex;
   height: 100%;
@@ -681,14 +681,14 @@ p,
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-item:hover {
+.desktop-menu-item:hover {
   background-color: rgb(255 255 255 / 0.2);
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 @media (min-width: 768px) {
-  .menu-item {
+  .desktop-menu-item {
     padding: 1rem;
     font-size: 1.5rem;
     line-height: 2rem;
@@ -696,14 +696,14 @@ p,
 }
 
 @media (min-width: 1024px) {
-  .menu-item {
+  .desktop-menu-item {
     padding: 1.5rem;
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
 }
 
-.group-open > .menu-item {
+.group-open > .desktop-menu-item {
   background-color: rgba(255, 255, 255, 0.1);
   color: white;
 }
