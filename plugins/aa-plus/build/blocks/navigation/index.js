@@ -8,7 +8,7 @@
   \******************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"aa-plus/navigation","title":"AA Navigation","category":"widgets","icon":"star-filled","description":"Adds a theme formatted navigation block","keywords":["navigation","menu"],"version":"1","textdomain":"aa-plus","editorScript":"file:./index.js","attributes":{},"supports":{"html":false}}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"aa-plus/navigation","title":"AA Navigation","category":"widgets","icon":"star-filled","description":"Adds a theme formatted navigation block","keywords":["navigation","menu"],"version":"1","textdomain":"aa-plus","editorScript":"file:./index.js","supports":{"html":false}}');
 
 /***/ }),
 

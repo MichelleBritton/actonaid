@@ -25,8 +25,25 @@ function aa_enqueue() {
     wp_enqueue_style('zilla');    
 }
 
-function aa_enqueue_editor_styles() {
-    add_editor_style('/assets/css/tailwind.css');
-    add_editor_style('https://fonts.googleapis.com/css2?family=Bitter:wght@700;900&display=swap');
-    add_editor_style('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;700&display=swap');
+function aa_editor_styles() {
+    // Enable editor styles
+    add_theme_support('editor-styles');
+    add_editor_style('assets/css/tailwind.css');
+}
+
+// Enqueue fonts inside the block editor
+function aa_enqueue_editor_assets() {
+    wp_enqueue_style(
+        'bitter-editor',
+        'https://fonts.googleapis.com/css2?family=Bitter:wght@700;900&display=swap',
+        [],
+        null
+    );
+
+    wp_enqueue_style(
+        'zilla-editor',
+        'https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;700&display=swap',
+        [],
+        null
+    );
 }

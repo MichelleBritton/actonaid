@@ -13,7 +13,6 @@
   "version": "1",
   "textdomain": "aa-plus",
   "editorScript": "file:./index.js",
-  "attributes": {},
   "supports": {
     "html": false
   }

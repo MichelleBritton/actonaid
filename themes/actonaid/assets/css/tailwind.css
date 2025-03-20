@@ -731,6 +731,34 @@ p,
   height: 100%;
 }
 
+.editor-styles-wrapper .is-fixed {
+  position: fixed !important;
+}
+
+.editor-styles-wrapper {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity, 1));
+}
+
+.editor-styles-wrapper .wp-block {
+  max-width: 100%;
+}
+
+.editor-styles-wrapper .alignfull {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vw;
+}
+
+.editor-styles-wrapper .alignwide {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 72rem;
+}
+
 .fixed {
   position: fixed;
 }

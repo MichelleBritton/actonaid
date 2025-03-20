@@ -12,6 +12,14 @@ function aa_enqueue_navigation_script() {
         '1.0',
         true // Load in the footer
     );
+
+    wp_enqueue_script(
+        'aa-slider-script',
+        plugins_url('../../src/blocks/slider/js/slider.js', __FILE__), 
+        array(), 
+        '1.0',
+        true // Load in the footer
+    );
 }
 
 /**

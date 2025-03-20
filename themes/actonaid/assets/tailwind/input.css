@@ -55,4 +55,24 @@
   .overlay-wrap:hover .overlay {
     @apply top-0 h-full;
   }
+
+  .editor-styles-wrapper .is-fixed {
+    position: fixed !important;
+  }
+
+  .editor-styles-wrapper {
+    @apply bg-white font-sans text-gray-900;
+  }
+
+  .editor-styles-wrapper .wp-block {
+    @apply max-w-full;
+  }
+
+  .editor-styles-wrapper .alignfull {
+    @apply ml-auto mr-auto w-screen;
+  }
+
+  .editor-styles-wrapper .alignwide {
+    @apply mx-auto max-w-6xl;
+  }
 }

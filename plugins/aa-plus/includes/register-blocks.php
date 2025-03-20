@@ -5,6 +5,7 @@ function aa_register_blocks() {
         [ 'name' => 'navigation', 'options' => [
             'render_callback' => 'aa_nav_render_cb'
         ]],
+        [ 'name' => 'slider' ],
     ];
 
     foreach($blocks as $block) {
