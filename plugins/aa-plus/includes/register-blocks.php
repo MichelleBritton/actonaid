@@ -6,6 +6,7 @@ function aa_register_blocks() {
             'render_callback' => 'aa_nav_render_cb'
         ]],
         [ 'name' => 'slider' ],
+        [ 'name' => 'text-area' ],
     ];
 
     foreach($blocks as $block) {
