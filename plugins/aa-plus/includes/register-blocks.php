@@ -7,6 +7,7 @@ function aa_register_blocks() {
         ]],
         [ 'name' => 'slider' ],
         [ 'name' => 'text-area' ],
+        [ 'name' => 'small-banner' ],
     ];
 
     foreach($blocks as $block) {

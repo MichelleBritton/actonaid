@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "aa-plus/small-banner",
+  "title": "AA Small Banner",
+  "category": "design",
+  "icon": "star-filled",
+  "description": "Adds a small banner",
+  "keywords": ["text", "background"],
+  "version": "1",
+  "textdomain": "aa-plus",
+  "editorScript": "file:./index.js",
+  "attributes": {
+    "bgColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "#000 "
+    },
+    "imgID": {
+      "type": "number"
+    },
+    "imgURL": {
+      "type": "string"
+    }
+  },
+  "supports": {
+    "html": false
+  }
+}
